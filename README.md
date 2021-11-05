@@ -29,3 +29,4 @@ The required Python packages can be found [here](https://github.com/psweens/Vasc
 ```bash
 conda create --name <env> --file REQUIREMENTS.txt
 ```
+This also contains the [Spyder IDE](https://www.spyder-ide.org/) to run the Python script.
