@@ -22,6 +22,7 @@ The following softwares are the minimal requirements:
 * Python 3.6.
 * NetworkX 2.4.
 * Tensorflow 2.3.1
+* GUDHI 3.2.0
 
 A package list for a Python environment has been provided and can be installed using the method described below.
 
