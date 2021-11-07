@@ -4,6 +4,12 @@
 
 This software package was used to quantity tumour vasculature in mesoscopic photoacoustic imaging here. The package was originally written by [Dr Bernadette J. Stolz](https://www.maths.ox.ac.uk/people/bernadette.stolz) and applied by [Dr Paul W. Sweeney](www.psweeney.co.uk) to analyse 3D images of tumour vasculature obtained using raster-scanning optoacoustic mesoscopy (RSOM).
 
+In summary, the package is split into four parts:
+1. Data Preprocessing - segmented tiff stacks are initially converted to a .nii format.
+2. Data Extraction - segmentations are skeletonised.
+3. Data Analysis - analyses and computes vascular descriptors.
+4. Void Analysis - 
+
 ## References 
 > [Multiscale Topology Characterises Dynamic Tumour Vascular Networks](https://arxiv.org/abs/2008.08667)<br>
 > Bernadette J, Stolz et al.
