@@ -1,0 +1,4 @@
+From
+
+
+https://github.com/SainsburyWellcomeCentre/aMAP/wiki/Converting-.tif-to-.nii-using-Matlab
