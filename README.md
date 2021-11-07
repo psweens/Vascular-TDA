@@ -8,7 +8,9 @@ In summary, the package is split into four parts:
 1. Data Preprocessing - segmented tiff stacks are initially converted to a .nii format.
 2. Data Extraction - segmentations are skeletonised.
 3. Data Analysis - analyses and computes vascular descriptors.
-4. Void Analysis - 
+4. Void Analysis - computes are analyses voids.
+
+Note, (4) was not applied in Brown, Sweeney & Lefebvre et al. (2021).
 
 ## References 
 > [Multiscale Topology Characterises Dynamic Tumour Vascular Networks](https://arxiv.org/abs/2008.08667)<br>
