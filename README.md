@@ -12,7 +12,7 @@ This software package was used to quantity tumour vasculature in mesoscopic phot
 The following softwares are the minimal requirements:
 * Matlab 2021b.
 * Python 3.6.
-* * NetworkX 2.4.
+* NetworkX 2.4.
 * Tensorflow 2.3.1
 
 A package list for a Python environment has been provided and can be installed using the method described below.
