@@ -7,8 +7,8 @@ This software package was used to quantity tumour vasculature in mesoscopic phot
 In summary, the package is split into four parts:
 1. Data Preprocessing - segmented tiff stacks are initially converted to a .nii format.
 2. Data Extraction - segmentations are skeletonised.
-3. Data Analysis - analyses and computes vascular descriptors.
-4. Void Analysis - computes are analyses voids.
+3. Data Analysis - calculates vascular descriptors.
+4. Void Analysis - computes and analyses voids.
 
 ***TDA_main_script.m*** acts as a wrapper to run the pipeline defined in Brown, Sweeney & Lefebvre et al. (2021). Note, (4) was not used.
 
