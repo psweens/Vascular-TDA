@@ -1,6 +1,6 @@
 # Topological Data Analysis of Vasculature
 
-***This repository is NOT maintained. A current version is maintained by Dr Bernadette J. Stolz [here](https://github.com/stolzbernadette/TDA-Tumour-Vasculature)***
+***This repository is NOT maintained. A current version is maintained by Dr Bernadette J. Stolz [here](https://github.com/stolzbernadette/TDA-Tumour-Vasculature).***
 
 This software package was used to quantity tumour vasculature in mesoscopic photoacoustic imaging here. The package was originally written by [Dr Bernadette J. Stolz](https://www.maths.ox.ac.uk/people/bernadette.stolz) and applied by [Dr Paul W. Sweeney](www.psweeney.co.uk) to analyse 3D images of tumour vasculature obtained using raster-scanning optoacoustic mesoscopy (RSOM).
 
