@@ -10,7 +10,7 @@ In summary, the package is split into four parts:
 3. Data Analysis - calculates vascular descriptors.
 4. Void Analysis - computes and analyses voids.
 
-***TDA_main_script.m*** acts as a wrapper to run the pipeline defined in Brown, Sweeney & Lefebvre et al. (2021). Note, (4) was not used.
+***TDA_main_script.m*** acts as a wrapper to perform the analysis detailed in in Brown, Sweeney & Lefebvre et al. (2021). Note, (4) was not used.
 
 ## References 
 > [Multiscale Topology Characterises Dynamic Tumour Vascular Networks](https://arxiv.org/abs/2008.08667)<br>
