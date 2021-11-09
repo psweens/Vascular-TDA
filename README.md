@@ -13,6 +13,8 @@ In summary, the package is split into four parts:
 ***TDA_main_script.m*** acts as a wrapper to perform the analysis detailed in in Brown, Sweeney & Lefebvre et al. (2021). Note, (4) was not used.
 
 ## References 
+To reference this repository please use the below ciations.
+
 > [Multiscale Topology Characterises Dynamic Tumour Vascular Networks](https://arxiv.org/abs/2008.08667)<br>
 > Bernadette J, Stolz et al.
 
