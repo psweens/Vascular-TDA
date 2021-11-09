@@ -1,16 +1,3 @@
-import sysconfig
-print(sysconfig.get_config_vars('Py_ENABLE_SHARED'))
-sysconfig.get_config_vars('Py_ENABLE_SHARED')
-print(sysconfig.get_config_vars('Py_ENABLE_SHARED'))
-
-import sys
-print(sys.path)
-
-sys.path.insert(0, '2_Data_Extraction/')
-sys.path.insert(0, '2_Data_Extraction/unet_core')
-sys.path.insert(0, '2_Data_Extraction/unet_core/networks')
-sys.path.insert(0, '2_Data_Extraction/unet_core/utils')
-
 from getData import getVesselDataComponentsDiametersLengths
 
 import glob
@@ -20,7 +7,7 @@ import shutil
 from joblib import Parallel, delayed
 import multiprocessing
 
-rootfolder = sys.argv[1]
+rootfolder = ""
 folder_idx = [name for name in os.listdir(rootfolder) if os.path.isdir(os.path.join(rootfolder, name))]
 
 for i in range(len(folder_idx)):    
