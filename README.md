@@ -2,7 +2,7 @@
 
 ***This repository is NOT maintained. A current version is maintained by Dr Bernadette J. Stolz [here](https://github.com/stolzbernadette/TDA-Tumour-Vasculature).***
 
-This software package was used to quantity tumour vasculature in mesoscopic photoacoustic imaging here. The package was originally written by [Dr Bernadette J. Stolz](https://www.maths.ox.ac.uk/people/bernadette.stolz) and applied by [Dr Paul W. Sweeney](www.psweeney.co.uk) to analyse 3D images of tumour vasculature obtained using raster-scanning optoacoustic mesoscopy (RSOM).
+This software package was used to quantity tumour vasculature in mesoscopic photoacoustic imaging [here](https://www.biorxiv.org/content/10.1101/2021.11.22.469541v1). The package was originally written by [Dr Bernadette J. Stolz](https://www.maths.ox.ac.uk/people/bernadette.stolz) and applied by [Dr Paul W. Sweeney](www.psweeney.co.uk) to analyse 3D images of tumour vasculature obtained using raster-scanning optoacoustic mesoscopy (RSOM).
 
 In summary, the package is split into four parts:
 1. Data Preprocessing - segmented tiff stacks are initially converted to a .nii format.
