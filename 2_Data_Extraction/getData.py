@@ -424,6 +424,6 @@ def getVesselDataComponentsDiametersLengths(img_name, folder, path_in, path_out,
 
     ff.close()
     
-    vt.plot_vessels(metric='diameter',  write_location=output_dir + "diameterPlot.png", width_scaling=0.2, threshold=None, maxval=maxdiam, minval=0.)
-    vt.plot_vessels(metric='length', write_location=output_dir + "lengthPlot.png", width_scaling=0.2, threshold=None, maxval=maxlength, minval=0.)
-    vt.plot_vessels(metric='clr', metric_scaling=255, write_location=output_dir + "clrPlot.png", width_scaling=0.2, threshold=None, maxval=255., minval=0.0)
+    vt.plot_vessels(metric='diameter',  write_location=output_dir + "diameterPlot.pdf", width_scaling=0.2, threshold=None, maxval=maxdiam, minval=0.)
+    vt.plot_vessels(metric='length', write_location=output_dir + "lengthPlot.pdf", width_scaling=0.2, threshold=None, maxval=maxlength, minval=0.)
+    vt.plot_vessels(metric='clr', metric_scaling=255, write_location=output_dir + "clrPlot.pdf", width_scaling=0.2, threshold=None, maxval=255., minval=0.0)
