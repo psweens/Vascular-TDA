@@ -785,7 +785,7 @@ class VesselTree(object):
                         # ax.scatter([n.x], [n.y], [n.z], marker='o')
                         pass
 
-            # ax.set_aspect('equal')
+            ax.set_aspect('equal')
             # ax.view_init(elev=90., azim=0)
             ax.patch.set_facecolor('black')
             ax.set_facecolor('black')
