@@ -751,42 +751,34 @@ class VesselTree(object):
             fig = plt.figure()
             fig.patch.set_facecolor('black')
             Z = [[0,0],[0,0]]
-            levels = np.linspace(minval/metric_scaling,maxval/metric_scaling,10)
+            if minval is None:
+                minval = 0  # or set a default that makes sense based on your data
+            if maxval is None:
+                maxval = 255  # same here
+            levels = np.linspace(minval, maxval, 10)
             CS3 = plt.contourf(Z, levels, cmap=plt.get_cmap(cmap))
             plt.clf()
             ax = fig.add_subplot(111)
-            # ax = fig.add_subplot(111, projection='3d')
             for c in self.skeleton.components:
                 for n1, n2, b in c.branch_iter():
-
                     if threshold is not None:
                         m = b.param_dict[metric] > threshold
-                        m *= 255.0
+                        m *= 255.0  # this seems odd if m > threshold is boolean; possibly needs adjustment
                     else:
                         m = b.param_dict[metric] * metric_scaling
-
-                    m = int(sorted((0, m, 255))[1])
+                        # Normalize m based on minval and maxval
+                        m = (m - minval) / (maxval - minval) * 255
+                        m = int(max(0, min(m, 255)))  # Ensure m stays within colormap index range
+        
                     C = c_m[m]
                     C = (C[0], C[1], C[2], 1.0)
                     width = b.param_dict[width_metric] * width_scaling / 10
-                    if width is not None and not np.isnan(width):
-                        width = sorted((0.1, width, 255))[1]
-                    else:
-                        width = 5
-
+                    width = max(0.1, min(width, 255))
+        
                     p = b.get_smoothed_points()
-                    #print(p)
-                    pl = ax.plot(-p[:, 1], p[:, 0], color=C, linewidth=width, alpha=0.5) #changed by BJS
-                    #pl = ax.plot(p[:, 0], p[:, 1], color=C, linewidth=width, alpha=0.5)
-                    # pl = ax.plot(p[:, 0], p[:, 1], p[:, 2], color=C, linewidth=width, alpha=0.5)
-
-                for n in c.graph.nodes():
-                    if c.graph.degree(n) > 0:
-                        # ax.scatter([n.x], [n.y], [n.z], marker='o')
-                        pass
-
+                    ax.plot(-p[:, 1], p[:, 0], color=C, linewidth=width, alpha=0.5)
+        
             ax.set_aspect('equal')
-            # ax.view_init(elev=90., azim=0)
             ax.patch.set_facecolor('black')
             ax.set_facecolor('black')
             ax.set_axis_off()
@@ -794,14 +786,14 @@ class VesselTree(object):
             plt.gca().invert_yaxis()
             plt.gca().invert_xaxis()
             cb.ax.yaxis.set_tick_params(labelcolor='w')
-
-
+        
             if write_location is not None:
                 plt.savefig(write_location, dpi=1000, facecolor=fig.get_facecolor())
             else:
                 plt.show()
-
+        
             plt.clf()
+
 
     def add_perfusion_information(self, image_path, perfusion_channel=None, image_series=1):
 
