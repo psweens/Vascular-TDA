@@ -68,7 +68,7 @@ parso==0.7.1
 pathtools==0.1.2
 pexpect==4.8.0
 pickleshare==0.7.5
-pip==20.3.4
+pip==23.3
 pluggy==0.13.1
 prompt-toolkit==2.0.10
 protobuf==3.18.0
