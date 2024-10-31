@@ -5,7 +5,7 @@
 
 version: 2
 updates:
-  - package-ecosystem: "npm" # or another package manager
+  - package-ecosystem: "pip" # or another package manager
     directory: "/"
     schedule:
       interval: "daily"
