@@ -6,7 +6,7 @@
 version: 2
 updates:
   - package-ecosystem: "npm" # or another package manager
-    directory: "**/*"
+    directory: "/"
     schedule:
       interval: "daily"
     allow:
