@@ -9,4 +9,6 @@ updates:
     directory: "**/*"
     schedule:
       interval: "daily"
-    open-pull-requests-limit: 5
+    allow:
+      # Allow both direct and indirect updates for all packages
+      - dependency-type: "all"
