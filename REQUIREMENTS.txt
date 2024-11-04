@@ -28,7 +28,7 @@ google-pasta==0.2.0
 grpcio==1.53.2
 h5py==2.10.0
 helpdev==0.7.1
-idna==2.10
+idna==3.7
 imagesize==1.2.0
 importlib-metadata==2.1.1
 intervaltree==3.1.0
