@@ -141,5 +141,5 @@ wrapt==1.12.1
 wurlitzer==3.0.2
 xz==5.2.5
 yapf==0.31.0
-zipp==1.2.0
+zipp==3.19.1
 zlib==1.2.11
